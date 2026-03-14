@@ -109,7 +109,7 @@ ul{list-style:none}
 .about-wrap{display:grid;grid-template-columns:280px 1fr;gap:70px;align-items:start}
 .about-left{display:flex;flex-direction:column;align-items:center;gap:28px}
 .avatar-wrap{position:relative;width:120px;height:120px}
-.avatar{width:120px;height:120px;border-radius:50%;background:rgba(99,102,241,.1);border:2px solid rgba(99,102,241,.3);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.avatar{width:120px;height:120px;border-radius:50%;background:rgba(99,102,241,.1);border:2px solid rgba(99,102,241,.3);display:flex;align-items:center;justify-content:center;overflow:hidden;object-fit:cover}
 .avatar svg{width:90%;height:90%}
 .avatar-ring{position:absolute;inset:-6px;border-radius:50%;border:2px solid transparent;background:var(--grad) border-box;-webkit-mask:linear-gradient(#fff 0 0) padding-box,linear-gradient(#fff 0 0);-webkit-mask-composite:destination-out;mask-composite:exclude;animation:spin 8s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
