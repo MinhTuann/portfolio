@@ -3,162 +3,469 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tuan Vu — Senior Fullstack Developer</title>
-  <meta name="description" content="Senior Fullstack Developer specializing in React, Next.js, and modern web technologies. Explore my portfolio of live projects." />
+  <title>Vu Hoang Minh Tuan — Mobile Developer</title>
+  <meta name="description" content="Mobile Developer with 6+ years of React Native and 2+ years of Flutter experience. Building high-performance mobile applications for iOS and Android." />
+  <meta property="og:title" content="Vu Hoang Minh Tuan — Mobile Developer" />
+  <meta property="og:description" content="Mobile Developer specializing in React Native, Flutter, iOS and Android." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- NAVBAR -->
+  <!-- ══ NAVBAR ══ -->
   <nav class="navbar" id="navbar">
     <div class="nav-inner">
-      <a href="#" class="nav-logo"><span class="logo-bracket">&lt;</span>TV<span class="logo-bracket">/&gt;</span></a>
+      <a href="#" class="nav-logo">
+        <div class="logo-icon">T</div>
+        <span>MinhTuan<span class="logo-dot">.</span></span>
+      </a>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#about"      class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects"   class="nav-link">Projects</a></li>
+        <li><a href="#skills"     class="nav-link">Skills</a></li>
+        <li><a href="#contact"    class="nav-link">Contact</a></li>
       </ul>
-      <a href="#projects" class="btn btn-sm btn-outline nav-cta">View Work</a>
+      <a href="CV-Tuan-Vu-Mobile-Developer.pdf" download class="btn btn-primary btn-sm nav-cta">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Resume
+      </a>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     </div>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero" id="home">
-    <canvas class="particle-canvas" id="particleCanvas"></canvas>
-    <div class="hero-glow hero-glow-1"></div>
-    <div class="hero-glow hero-glow-2"></div>
+  <!-- ══ HERO ══ -->
+  <section class="hero" id="hero">
+    <canvas id="particleCanvas" class="particle-canvas"></canvas>
+    <div class="hero-orb orb-1"></div>
+    <div class="hero-orb orb-2"></div>
+    <div class="hero-orb orb-3"></div>
+
     <div class="hero-content">
-      <div class="hero-badge reveal"><span class="badge-dot"></span>Available for new projects</div>
-      <h1 class="hero-title reveal">Senior Fullstack<br /><span class="gradient-text">Developer</span></h1>
-      <p class="hero-subtitle reveal">Building high-performance, pixel-perfect web experiences from concept to deployment — with React, Next.js, and modern cloud infrastructure.</p>
+      <div class="hero-badge reveal">
+        <span class="pulse-dot"></span>
+        Available for opportunities
+      </div>
+
+      <h1 class="hero-name reveal">Vu Hoang<br /><span class="name-highlight">Minh Tuan</span></h1>
+
+      <div class="hero-title-row reveal">
+        <div class="title-tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          Mobile Developer
+        </div>
+        <div class="title-tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          React Native · Flutter
+        </div>
+        <div class="title-tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          6+ Years Experience
+        </div>
+      </div>
+
+      <p class="hero-bio reveal">An enthusiastic team player and deep creative thinker building high-performance mobile applications. Specialized in React Native and Flutter — developing, maintaining, and deploying code for high-volume businesses across healthcare, foodtech, edtech, and hospitality industries.</p>
+
       <div class="hero-actions reveal">
         <a href="#projects" class="btn btn-primary">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-          Explore Projects
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>
+          View Projects
         </a>
-        <a href="#contact" class="btn btn-ghost">Get in Touch <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a href="#contact" class="btn btn-ghost">
+          Get in Touch
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
       </div>
+
       <div class="hero-stats reveal">
-        <div class="stat"><span class="stat-number" data-target="3">0</span><span class="stat-label">Live Projects</span></div>
-        <div class="stat-divider"></div>
-        <div class="stat"><span class="stat-number" data-target="5">0</span><span class="stat-suffix">+</span><span class="stat-label">Years Exp.</span></div>
-        <div class="stat-divider"></div>
-        <div class="stat"><span class="stat-number" data-target="10">0</span><span class="stat-suffix">+</span><span class="stat-label">Technologies</span></div>
+        <div class="stat">
+          <span class="stat-num" data-target="6">0</span><span class="stat-sfx">+</span>
+          <span class="stat-lbl">Years React Native</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="2">0</span><span class="stat-sfx">+</span>
+          <span class="stat-lbl">Years Flutter</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="8">0</span><span class="stat-sfx">+</span>
+          <span class="stat-lbl">Apps Delivered</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="5">0</span><span class="stat-sfx">+</span>
+          <span class="stat-lbl">Companies</span>
+        </div>
       </div>
     </div>
-    <div class="hero-scroll-indicator"><div class="scroll-line"></div><span>Scroll</span></div>
+
+    <div class="scroll-hint"><div class="scroll-line"></div><span>Scroll</span></div>
   </section>
 
-  <!-- PROJECTS -->
-  <section class="projects" id="projects">
+  <!-- ══ ABOUT ══ -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-wrap">
+        <div class="about-left reveal">
+          <div class="avatar-wrap">
+            <div class="avatar">
+              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="40" cy="30" r="16" fill="rgba(99,102,241,0.3)" stroke="#6366f1" stroke-width="2"/>
+                <path d="M10 70c0-16.569 13.431-30 30-30s30 13.431 30 30" fill="rgba(99,102,241,0.15)" stroke="#6366f1" stroke-width="2"/>
+                <text x="40" y="36" text-anchor="middle" fill="#6366f1" font-size="18" font-weight="800" font-family="Inter">TV</text>
+              </svg>
+            </div>
+            <div class="avatar-ring"></div>
+          </div>
+          <div class="about-info">
+            <div class="info-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Binh Thanh, Ho Chi Minh City</span>
+            </div>
+            <div class="info-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.92 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>+84 39 40 40 500</span>
+            </div>
+            <div class="info-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>mhmtuanvn@gmail.com</span>
+            </div>
+            <div class="info-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              <a href="https://github.com/minhtuann" target="_blank" rel="noopener">github.com/minhtuann</a>
+            </div>
+          </div>
+        </div>
+        <div class="about-right reveal">
+          <span class="section-label">About Me</span>
+          <h2 class="section-title">Mobile Developer &amp; Creative Thinker</h2>
+          <p>Mobile Developer with <strong>6 years of React Native</strong> and <strong>2 years of Flutter</strong> experience. I specialize in developing, maintaining, and deploying production-grade mobile applications for high-volume businesses.</p>
+          <p>My career spans diverse industries — healthcare, food delivery, education, hospitality, and job markets — giving me a broad perspective on building mobile solutions that solve real-world problems at scale.</p>
+          <p>I'm an enthusiastic team player who brings deep creative thinking to every project, from architecture decisions to delivering smooth, delightful user experiences.</p>
+          <div class="edu-card">
+            <div class="edu-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <div>
+              <div class="edu-school">Van Lang University</div>
+              <div class="edu-degree">B.S. Software Engineering — Carnegie Mellon University Program</div>
+              <div class="edu-date">2014 – 2018</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ EXPERIENCE ══ -->
+  <section class="experience section" id="experience">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-label">Featured Work</span>
-        <h2 class="section-title">Live Projects</h2>
-        <p class="section-desc">Three full-scale web applications built and deployed, each demonstrating different stacks and design systems.</p>
+        <span class="section-label">Work History</span>
+        <h2 class="section-title">Experience</h2>
       </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item reveal" data-delay="0">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <div>
+                <h3 class="tc-role">React Native &amp; Flutter Developer</h3>
+                <div class="tc-company">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                  Fullerton Health Vietnam
+                </div>
+              </div>
+              <span class="tc-date">04/2022 – 06/2025</span>
+            </div>
+            <ul class="tc-list">
+              <li>Shipped new features and stabilized existing healthcare applications serving B2C users across multiple markets</li>
+              <li>Collaborated with product stakeholders to deliver React Native and Flutter mobile experiences</li>
+              <li>Led migration efforts from React Native to Flutter for improved performance and maintainability</li>
+              <li>Integrated Google Cloud Services, Firebase, Maps, Notifications, Push Alerts, and Payment Services</li>
+            </ul>
+            <div class="tc-tags">
+              <span class="tag">React Native</span>
+              <span class="tag">Flutter</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">Google Cloud</span>
+              <span class="tag">Payment API</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-delay="80">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <div>
+                <h3 class="tc-role">React Native Developer</h3>
+                <div class="tc-company">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                  Kalpha Vietnam
+                </div>
+              </div>
+              <span class="tc-date">10/2021 – 12/2021</span>
+            </div>
+            <ul class="tc-list">
+              <li>Built applications following design specifications and product requirements</li>
+              <li>Handled full development lifecycle from coding to deployment on App Store and Google Play</li>
+            </ul>
+            <div class="tc-tags">
+              <span class="tag">React Native</span>
+              <span class="tag">App Store</span>
+              <span class="tag">Google Play</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-delay="160">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <div>
+                <h3 class="tc-role">React Native Developer</h3>
+                <div class="tc-company">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                  Eatshomemade GmbH
+                </div>
+              </div>
+              <span class="tc-date">11/2020 – 08/2021</span>
+            </div>
+            <ul class="tc-list">
+              <li>Acted as the main mobile developer in a 4-member cross-functional team for a Switzerland food delivery startup</li>
+              <li>Researched and proposed design ideas to significantly improve user experience</li>
+            </ul>
+            <div class="tc-tags">
+              <span class="tag">React Native</span>
+              <span class="tag">UX Research</span>
+              <span class="tag">Food Delivery</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-delay="240">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <div>
+                <h3 class="tc-role">Freelance React Native Developer</h3>
+                <div class="tc-company">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                  Hoang Yen Group
+                </div>
+              </div>
+              <span class="tc-date">10/2019 – 04/2020</span>
+            </div>
+            <ul class="tc-list">
+              <li>Developed and maintained booking and payment products for Hoang Yen Restaurant chain</li>
+            </ul>
+            <div class="tc-tags">
+              <span class="tag">React Native</span>
+              <span class="tag">Booking System</span>
+              <span class="tag">Payment</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-delay="320">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <div>
+                <h3 class="tc-role">React Native Developer</h3>
+                <div class="tc-company">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                  Apps Cyclone Technology JSC
+                </div>
+              </div>
+              <span class="tc-date">07/2018 – 08/2019</span>
+            </div>
+            <ul class="tc-list">
+              <li>Main developer responsible for iOS and Android application deployment</li>
+              <li>Supported various iOS projects using Swift alongside React Native development</li>
+            </ul>
+            <div class="tc-tags">
+              <span class="tag">React Native</span>
+              <span class="tag">iOS</span>
+              <span class="tag">Android</span>
+              <span class="tag">Swift</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ PROJECTS ══ -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Portfolio</span>
+        <h2 class="section-title">Projects</h2>
+        <p class="section-desc">Mobile applications built and shipped to production across multiple industries and platforms.</p>
+      </div>
+
       <div class="projects-grid">
 
-        <!-- Card 1: Acme Store -->
-        <article class="project-card reveal" style="--card-accent:#3b82f6;">
-          <div class="card-image-wrap">
-            <img src="assets/screenshots/acme-store.png" alt="Acme Store" class="card-image" loading="lazy" />
-            <div class="card-overlay">
-              <a href="https://demo.vercel.store" target="_blank" rel="noopener" class="btn btn-light" id="acme-live-link">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Visit Site
-              </a>
-              <a href="https://github.com/vercel/commerce" target="_blank" rel="noopener" class="btn btn-dark" id="acme-source-link">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg> Source
-              </a>
+        <!-- Kronos Watches -->
+        <article class="project-card reveal" style="--accent:#c5a059;" data-delay="0">
+          <div class="pc-top">
+            <div class="pc-icon" style="background:rgba(197,160,89,0.12);color:#c5a059;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
             </div>
-            <div class="card-category">E-Commerce</div>
+            <span class="pc-platform">Web · Personal Project</span>
           </div>
-          <div class="card-body">
-            <div class="card-meta">
-              <span class="card-number">01</span>
-              <div class="card-stack">
-                <span class="badge">Next.js</span><span class="badge">Shopify</span><span class="badge">Vercel</span><span class="badge">TypeScript</span>
-              </div>
+          <h3 class="pc-title">Kronos Watches</h3>
+          <p class="pc-desc">A cinematic luxury watch brand experience. Features an immersive video carousel, glassmorphic UI elements, and a sleek dark aesthetic designed to showcase premium timepieces.</p>
+          <div class="pc-tags">
+            <span class="tag">React</span><span class="tag">Vite</span><span class="tag">Framer Motion</span><span class="tag">CSS3</span>
+          </div>
+          <div class="pc-footer">
+            <div class="pc-links" style="display:flex;gap:12px;">
+              <a href="https://github.com/MinhTuann/react-kronos" target="_blank" rel="noopener" style="color:var(--text-s);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+              <a href="https://minhtuann.github.io/react-kronos" target="_blank" rel="noopener" style="color:var(--text-s);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
             </div>
-            <h3 class="card-title">Acme Store</h3>
-            <p class="card-desc">A high-performance SSR e-commerce storefront built with Next.js App Router and Shopify's Storefront API. Features real-time cart updates, search, and product filtering — deployed on Vercel's edge network.</p>
-            <div class="card-features">
-              <div class="feature"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Server-Side Rendering</div>
-              <div class="feature"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Shopify Storefront API</div>
-              <div class="feature"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Edge Network Deployment</div>
-              <div class="feature"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Real-time Cart</div>
-            </div>
-            <a href="https://demo.vercel.store" target="_blank" rel="noopener" class="card-cta">Open Project <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
           </div>
         </article>
 
-        <!-- Card 2: vCard Portfolio -->
-        <article class="project-card reveal" style="--card-accent:#f59e0b;">
-          <div class="card-image-wrap">
-            <img src="assets/screenshots/vcard-portfolio.png" alt="vCard Portfolio" class="card-image" loading="lazy" />
-            <div class="card-overlay">
-              <a href="https://codewithsadee.github.io/vcard-personal-portfolio/" target="_blank" rel="noopener" class="btn btn-light" id="vcard-live-link">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Visit Site
-              </a>
-              <a href="https://github.com/codewithsadee/vcard-personal-portfolio" target="_blank" rel="noopener" class="btn btn-dark" id="vcard-source-link">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg> Source
-              </a>
+        <!-- Fullerton Health -->
+        <article class="project-card reveal" style="--accent:#6366f1;" data-delay="0">
+          <div class="pc-top">
+            <div class="pc-icon" style="background:rgba(99,102,241,0.12);color:#6366f1;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
             </div>
-            <div class="card-category">Portfolio / UI</div>
+            <span class="pc-platform">iOS · Android · 🇸🇬 🇻🇳</span>
           </div>
-          <div class="card-body">
-            <div class="card-meta">
-              <span class="card-number">02</span>
-              <div class="card-stack">
-                <span class="badge">HTML5</span><span class="badge">CSS3</span><span class="badge">JavaScript</span><span class="badge">GitHub Pages</span>
-              </div>
-            </div>
-            <h3 class="card-title">vCard Portfolio</h3>
-            <p class="card-desc">A responsive personal portfolio with a dark vCard aesthetic, gold accents, and smooth tab-based navigation. Sections for Resume, Portfolio, Blog, and Contact — styled from scratch with pure CSS, deployed on GitHub Pages.</p>
-            <div class="card-features">
-              <div class="feature"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Dark Glass UI Design</div>
-              <div class="feature"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Tab Navigation System</div>
-              <div class="feature"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Fully Responsive</div>
-              <div class="feature"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Zero Dependencies</div>
-            </div>
-            <a href="https://codewithsadee.github.io/vcard-personal-portfolio/" target="_blank" rel="noopener" class="card-cta">Open Project <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          <h3 class="pc-title">Fullerton Health</h3>
+          <p class="pc-desc">Healthcare applications connecting patients with health providers across the Fullerton Health network. Features telemedicine, appointment booking, health records, and real-time notifications.</p>
+          <div class="pc-tags">
+            <span class="tag">React Native</span><span class="tag">Flutter</span>
+            <span class="tag">Google Maps</span><span class="tag">Firebase</span><span class="tag">Video Call</span>
+          </div>
+          <div class="pc-footer">
+            <span class="pc-year">2022 – 2025</span>
+            <span class="pc-company">Fullerton Health Vietnam</span>
           </div>
         </article>
 
-        <!-- Card 3: Kronos -->
-        <article class="project-card reveal" style="--card-accent:#c9a96e;">
-          <div class="card-image-wrap">
-            <img src="assets/screenshots/react-kronos.png" alt="Kronos Watches" class="card-image" loading="lazy" />
-            <div class="card-overlay">
-              <a href="https://minhtuann.github.io/react-kronos" target="_blank" rel="noopener" class="btn btn-light" id="kronos-live-link">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> Visit Site
-              </a>
-              <a href="https://github.com/MinhTuann/react-kronos" target="_blank" rel="noopener" class="btn btn-dark" id="kronos-source-link">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg> Source
-              </a>
+        <!-- Kalpha -->
+        <article class="project-card reveal" style="--accent:#8b5cf6;" data-delay="80">
+          <div class="pc-top">
+            <div class="pc-icon" style="background:rgba(139,92,246,0.12);color:#8b5cf6;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
             </div>
-            <div class="card-category">Luxury / Branding</div>
+            <span class="pc-platform">iOS · Android · 🇻🇳</span>
           </div>
-          <div class="card-body">
-            <div class="card-meta">
-              <span class="card-number">03</span>
-              <div class="card-stack">
-                <span class="badge">React</span><span class="badge">Vite</span><span class="badge">CSS3</span><span class="badge">GitHub Pages</span>
-              </div>
+          <h3 class="pc-title">Kalpha</h3>
+          <p class="pc-desc">Peer-to-peer education ecosystem enabling knowledge exchange between learners. A platform for sharing expertise across various subjects and disciplines.</p>
+          <div class="pc-tags">
+            <span class="tag">React Native</span><span class="tag">EdTech</span><span class="tag">P2P Learning</span>
+          </div>
+          <div class="pc-footer">
+            <span class="pc-year">2021</span>
+            <span class="pc-company">Kalpha Vietnam</span>
+          </div>
+        </article>
+
+        <!-- Eatshomemade -->
+        <article class="project-card reveal" style="--accent:#06b6d4;" data-delay="160">
+          <div class="pc-top">
+            <div class="pc-icon" style="background:rgba(6,182,212,0.12);color:#06b6d4;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
             </div>
-            <h3 class="card-title">Kronos Watches</h3>
-            <p class="card-desc">A cinematic luxury watch brand frontend built with React and Vite. Features a full-viewport video carousel, immersive hero section, and an elegant CMS-driven product catalog — evoking the world of Haute Joaillerie.</p>
-            <div class="card-features">
-              <div class="feature"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Full-Viewport Video Carousel</div>
-              <div class="feature"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> React + Vite</div>
-              <div class="feature"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> CMS-Driven Content</div>
-              <div class="feature"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Luxury Brand Aesthetic</div>
+            <span class="pc-platform">iOS · Android · 🇨🇭</span>
+          </div>
+          <h3 class="pc-title">Eatshomemade</h3>
+          <p class="pc-desc">Food delivery service application for the Swiss market. Connects home cooks with customers, enabling homemade meal delivery. Served as the lead mobile developer on a 4-person team.</p>
+          <div class="pc-tags">
+            <span class="tag">React Native</span><span class="tag">Food Delivery</span><span class="tag">Maps</span><span class="tag">Payments</span>
+          </div>
+          <div class="pc-footer">
+            <span class="pc-year">2020 – 2021</span>
+            <span class="pc-company">Eatshomemade GmbH</span>
+          </div>
+        </article>
+
+        <!-- HYG CRM -->
+        <article class="project-card reveal" style="--accent:#f59e0b;" data-delay="0">
+          <div class="pc-top">
+            <div class="pc-icon" style="background:rgba(245,158,11,0.12);color:#f59e0b;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
             </div>
-            <a href="https://minhtuann.github.io/react-kronos" target="_blank" rel="noopener" class="card-cta">Open Project <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            <span class="pc-platform">iOS · Android · 🇻🇳</span>
+          </div>
+          <h3 class="pc-title">HYG CRM App</h3>
+          <p class="pc-desc">Booking and payment processing application for the Hoang Yen Restaurant Group. Streamlines table reservations and in-app payments across the chain's locations.</p>
+          <div class="pc-tags">
+            <span class="tag">React Native</span><span class="tag">CRM</span><span class="tag">Booking</span><span class="tag">Payments</span>
+          </div>
+          <div class="pc-footer">
+            <span class="pc-year">2019 – 2020</span>
+            <span class="pc-company">Hoang Yen Group</span>
+          </div>
+        </article>
+
+        <!-- PixuJob -->
+        <article class="project-card reveal" style="--accent:#10b981;" data-delay="80">
+          <div class="pc-top">
+            <div class="pc-icon" style="background:rgba(16,185,129,0.12);color:#10b981;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            </div>
+            <span class="pc-platform">iOS · Android · 🇦🇺</span>
+          </div>
+          <h3 class="pc-title">PixuJob</h3>
+          <p class="pc-desc">Job marketplace application available in Australia. Connects employers with job seekers. Includes a companion Resupix app serving as a communication channel between applicants and employers.</p>
+          <div class="pc-tags">
+            <span class="tag">React Native</span><span class="tag">Job Market</span><span class="tag">Messaging</span>
+          </div>
+          <div class="pc-footer">
+            <span class="pc-year">01/2019</span>
+            <span class="pc-company">Apps Cyclone Technology</span>
+          </div>
+        </article>
+
+        <!-- CHC App -->
+        <article class="project-card reveal" style="--accent:#ef4444;" data-delay="160">
+          <div class="pc-top">
+            <div class="pc-icon" style="background:rgba(239,68,68,0.12);color:#ef4444;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+            </div>
+            <span class="pc-platform">iOS · 🇸🇬</span>
+          </div>
+          <h3 class="pc-title">CHC App</h3>
+          <p class="pc-desc">Worship experience application for City Harvest Church. A native iOS app built in Swift providing an immersive spiritual and community experience for church members.</p>
+          <div class="pc-tags">
+            <span class="tag">iOS</span><span class="tag">Swift</span><span class="tag">Native</span>
+          </div>
+          <div class="pc-footer">
+            <span class="pc-year">11/2018</span>
+            <span class="pc-company">Apps Cyclone Technology</span>
+          </div>
+        </article>
+
+        <!-- Pemedic -->
+        <article class="project-card reveal" style="--accent:#ec4899;" data-delay="240">
+          <div class="pc-top">
+            <div class="pc-icon" style="background:rgba(236,72,153,0.12);color:#ec4899;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/><path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/></svg>
+            </div>
+            <span class="pc-platform">iOS · Android · 🇻🇳</span>
+          </div>
+          <h3 class="pc-title">Pemedic</h3>
+          <p class="pc-desc">Clinic application for digital appointment booking and medical record management. Helps patients easily access healthcare services and manage their medical history.</p>
+          <div class="pc-tags">
+            <span class="tag">React Native</span><span class="tag">HealthTech</span><span class="tag">Booking</span>
+          </div>
+          <div class="pc-footer">
+            <span class="pc-year">10/2018</span>
+            <span class="pc-company">Apps Cyclone Technology</span>
           </div>
         </article>
 
@@ -166,69 +473,150 @@
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section class="about" id="about">
+  <!-- ══ SKILLS ══ -->
+  <section class="skills section" id="skills">
     <div class="container">
-      <div class="about-grid">
-        <div class="about-text reveal">
-          <span class="section-label">About Me</span>
-          <h2 class="section-title">Crafting Digital Experiences</h2>
-          <p>I'm a Senior Fullstack Developer with a passion for building products that look stunning and perform flawlessly. From e-commerce platforms on Vercel's edge network to luxury brand landing pages — I bring ideas to life with clean code and pixel-perfect design.</p>
-          <p>My stack spans the full JavaScript ecosystem: React, Next.js, Node.js, and modern deployment pipelines. I believe great software lives at the intersection of engineering rigor and design excellence.</p>
-          <div class="about-actions">
-            <a href="#projects" class="btn btn-primary">See My Work</a>
-            <a href="#contact" class="btn btn-ghost">Let's Talk</a>
+      <div class="section-header reveal">
+        <span class="section-label">Expertise</span>
+        <h2 class="section-title">Technical Skills</h2>
+      </div>
+      <div class="skills-wrap">
+
+        <div class="skill-group reveal" data-delay="0">
+          <div class="sg-header">
+            <div class="sg-icon" style="--c:#61DAFB;">
+              <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="2.4"/><ellipse cx="12" cy="12" rx="10" ry="4" fill="none" stroke="currentColor" stroke-width="1.5"/><ellipse cx="12" cy="12" rx="10" ry="4" fill="none" stroke="currentColor" stroke-width="1.5" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" fill="none" stroke="currentColor" stroke-width="1.5" transform="rotate(120 12 12)"/></svg>
+            </div>
+            <h3>React Native</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill">Google Maps</span><span class="pill">Push Notifications</span>
+            <span class="pill">Firebase Auth</span><span class="pill">State Management</span>
+            <span class="pill">Reanimated</span><span class="pill">Socket.io</span>
+            <span class="pill">Video Call / WebRTC</span><span class="pill">Payment Services</span>
+            <span class="pill">In-App Purchase</span><span class="pill">App Store Deploy</span>
           </div>
         </div>
-        <div class="skills-grid reveal">
-          <div class="skill-card"><div class="skill-icon" style="--icon-color:#61DAFB"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="2.4"/><ellipse cx="12" cy="12" rx="10" ry="4" fill="none" stroke="currentColor" stroke-width="1.5"/><ellipse cx="12" cy="12" rx="10" ry="4" fill="none" stroke="currentColor" stroke-width="1.5" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" fill="none" stroke="currentColor" stroke-width="1.5" transform="rotate(120 12 12)"/></svg></div><span>React</span></div>
-          <div class="skill-card"><div class="skill-icon" style="--icon-color:#fff"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.572 0c-.176 0-.31.001-.358.007a19.76 19.76 0 0 1-.364.033C6.07.361 2.558 2.7.563 6.13c-.956 1.616-1.51 3.427-1.647 5.322-.035.468-.042.603-.042.93 0 .327.006.461.042.929.137 1.895.69 3.706 1.647 5.322 1.995 3.43 5.507 5.769 9.287 6.093.124.011.258.017.393.018.13.001.286-.004.428-.012.134-.008.233-.02.341-.04 1.8-.32 3.455-.993 4.88-1.99a.276.276 0 0 0 .05-.407L14.1 17.2a.276.276 0 0 0-.309-.066 8.297 8.297 0 0 1-3.35.698 8.22 8.22 0 0 1-4.523-1.355 8.278 8.278 0 0 1-3.007-3.573A8.21 8.21 0 0 1 2.3 9.31a8.21 8.21 0 0 1 .61-3.594 8.278 8.278 0 0 1 3.007-3.573 8.22 8.22 0 0 1 4.523-1.355c1.46 0 2.88.388 4.128 1.12l-1.69 1.69a.275.275 0 0 0 .195.469h5.528a.275.275 0 0 0 .275-.275V8.26a.275.275 0 0 0-.47-.195l-1.64 1.64A11.63 11.63 0 0 0 11.572 8c-6.407 0-11.609 5.202-11.609 11.609 0 6.407 5.202 11.609 11.609 11.609S23.18 26.016 23.18 19.609a11.59 11.59 0 0 0-3.406-8.203l1.64-1.64a.275.275 0 0 0-.195-.469h-5.527a.275.275 0 0 0-.275.275v5.527a.275.275 0 0 0 .469.195z" fill="none"/></svg></div><span>Next.js</span></div>
-          <div class="skill-card"><div class="skill-icon" style="--icon-color:#646cff"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12c0 6.627-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0s12 5.373 12 12Zm-5.306 0-6.44-11.153h-.037L5.776 12H6.92l4.948-8.576L16.815 12h-1.143l-3.806-6.594L8.06 12h7.635Z"/></svg></div><span>Vite</span></div>
-          <div class="skill-card"><div class="skill-icon" style="--icon-color:#3178C6"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0zm17.363 9.75c.612 0 1.154.037 1.627.111a6.38 6.38 0 0 1 1.306.34v2.458a3.95 3.95 0 0 0-.643-.361 5.093 5.093 0 0 0-.717-.26 5.453 5.453 0 0 0-1.426-.2c-.3 0-.573.028-.819.086a2.1 2.1 0 0 0-.623.242c-.17.104-.3.229-.393.374a.888.888 0 0 0-.14.49c0 .196.053.373.156.529.104.156.252.304.443.444s.423.276.696.41c.273.135.582.274.926.416.47.197.892.407 1.266.628.374.222.695.473.963.753.268.279.472.598.614.957.142.359.214.776.214 1.253 0 .657-.125 1.21-.373 1.656a3.033 3.033 0 0 1-1.012 1.085 4.38 4.38 0 0 1-1.487.596c-.566.12-1.163.18-1.79.18a9.916 9.916 0 0 1-1.84-.164 5.544 5.544 0 0 1-1.512-.493v-2.63a5.033 5.033 0 0 0 3.237 1.2c.333 0 .624-.03.872-.09.249-.06.456-.144.623-.25.166-.108.29-.234.373-.38a1.023 1.023 0 0 0-.074-1.089 2.12 2.12 0 0 0-.537-.5 5.597 5.597 0 0 0-.807-.444 27.72 27.72 0 0 0-1.007-.436c-.918-.383-1.602-.852-2.053-1.405-.45-.553-.676-1.222-.676-2.005 0-.614.123-1.141.369-1.582.246-.441.58-.804 1.004-1.089a4.494 4.494 0 0 1 1.47-.629 7.536 7.536 0 0 1 1.77-.201zm-15.113.188h9.563v2.166H9.506v9.646H6.789v-9.646H3.375z"/></svg></div><span>TypeScript</span></div>
-          <div class="skill-card"><div class="skill-icon" style="--icon-color:#68A063"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.998 24c-.321 0-.641-.084-.922-.247l-2.936-1.737c-.438-.245-.224-.332-.08-.383.585-.203.703-.25 1.328-.604.065-.037.151-.023.218.017l2.256 1.339c.082.045.197.045.272 0l8.795-5.076c.082-.047.134-.141.134-.238V6.921c0-.099-.053-.192-.137-.242l-8.791-5.072c-.081-.047-.189-.047-.271 0L3.075 6.68C2.99 6.729 2.936 6.825 2.936 6.921v10.15c0 .097.054.189.139.235l2.409 1.392c1.307.654 2.108-.116 2.108-.89V7.787c0-.142.114-.253.256-.253h1.115c.139 0 .255.112.255.253v10.021c0 1.745-.95 2.745-2.604 2.745-.508 0-.909 0-2.026-.551L2.28 18.675c-.57-.329-.922-.945-.922-1.604V6.921c0-.659.353-1.275.922-1.603l8.795-5.082c.557-.315 1.296-.315 1.848 0l8.794 5.082c.57.329.924.944.924 1.603v10.15c0 .659-.354 1.275-.924 1.604l-8.794 5.078C12.643 23.916 12.324 24 11.998 24z"/></svg></div><span>Node.js</span></div>
-          <div class="skill-card"><div class="skill-icon" style="--icon-color:#96BF48"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.774 9.21c-.04-.105-.14-.175-.253-.175h-4.243l2.27-8.602A.267.267 0 0 0 18.3.175.262.262 0 0 0 18.052 0H10.18a.263.263 0 0 0-.26.218L7.543 15.332a.265.265 0 0 0 .052.21.262.262 0 0 0 .208.1h3.898l-2.225 8.127a.265.265 0 0 0 .174.326.265.265 0 0 0 .308-.113l10.76-14.476a.264.264 0 0 0 .056-.296z"/></svg></div><span>Shopify</span></div>
-          <div class="skill-card"><div class="skill-icon" style="--icon-color:#F05032"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.604-.404-.541-.541-.677-1.336-.405-1.996L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187"/></svg></div><span>Git/GitHub</span></div>
-          <div class="skill-card"><div class="skill-icon" style="--icon-color:#0070F3"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 22.525H0l12-21.05 12 21.05z"/></svg></div><span>Vercel</span></div>
+
+        <div class="skill-group reveal" data-delay="100">
+          <div class="sg-header">
+            <div class="sg-icon" style="--c:#54C5F8;">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.314 0L2.3 12 6 15.7 21.684.013h-7.37zm.014 11.072L7.857 17.53l6.47 6.47H21.7l-6.46-6.468 6.46-6.46h-7.37zM0 13.831l3.429 3.429L0 20.689v-6.858z"/></svg>
+            </div>
+            <h3>Flutter</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill">React Native → Flutter Migration</span>
+            <span class="pill">Google Maps</span><span class="pill">Firebase Services</span>
+            <span class="pill">State Management</span><span class="pill">Camera / Video Call</span>
+            <span class="pill">Payment Integration</span>
+          </div>
         </div>
+
+        <div class="skill-group reveal" data-delay="200">
+          <div class="sg-header">
+            <div class="sg-icon" style="--c:#A8B9CC;">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.462 0H6.538L0 12l6.538 12h10.924L24 12z"/></svg>
+            </div>
+            <h3>Native Mobile</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill">iOS / Swift</span><span class="pill">Android / Java</span>
+            <span class="pill">Xcode</span><span class="pill">Android Studio</span>
+            <span class="pill">App Store Connect</span><span class="pill">Play Console</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal" data-delay="300">
+          <div class="sg-header">
+            <div class="sg-icon" style="--c:#F7DF1E;">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.704-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.048z"/></svg>
+            </div>
+            <h3>Web &amp; Other</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill">ReactJS</span><span class="pill">NodeJS</span>
+            <span class="pill">UI/UX Design</span><span class="pill">Git</span>
+            <span class="pill">REST APIs</span><span class="pill">TypeScript</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal" data-delay="400">
+          <div class="sg-header">
+            <div class="sg-icon" style="--c:#FFCA28;">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.997 2.013l-9.616 5.555v11.108l9.616 5.556 9.617-5.556V7.568L12.997 2.013zM12.997 0l11.617 6.708V17.29L12.997 24 1.38 17.291V6.708L12.997 0z"/></svg>
+            </div>
+            <h3>Cloud &amp; Services</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill">Firebase</span><span class="pill">Google Cloud</span>
+            <span class="pill">Push Notifications (FCM / APNs)</span>
+            <span class="pill">Google Auth</span><span class="pill">Stripe / Payment Gateways</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal" data-delay="500">
+          <div class="sg-header">
+            <div class="sg-icon" style="--c:#4CAF50;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Soft Skills</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill">Research &amp; Problem Solving</span>
+            <span class="pill">Team Collaboration</span>
+            <span class="pill">Communication</span>
+            <span class="pill">Creative Thinking</span>
+            <span class="pill">Mentoring</span>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section class="contact" id="contact">
+  <!-- ══ CONTACT ══ -->
+  <section class="contact section" id="contact">
     <div class="container">
-      <div class="contact-inner reveal">
+      <div class="contact-box reveal">
         <div class="contact-glow"></div>
-        <span class="section-label">Let's Connect</span>
-        <h2 class="section-title">Ready to Build Something?</h2>
-        <p class="contact-desc">Whether you have a project in mind or just want to chat about tech — I'm always open to new conversations.</p>
-        <div class="contact-links">
-          <a href="https://github.com/MinhTuann" target="_blank" rel="noopener" class="contact-link" id="link-github">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-            GitHub
-          </a>
-          <a href="mailto:tuanvu@example.com" class="contact-link" id="link-email">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            Email Me
-          </a>
-          <a href="https://minhtuann.github.io/react-kronos" target="_blank" rel="noopener" class="contact-link" id="link-demo">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-            Live Demo
-          </a>
+        <div class="contact-content">
+          <span class="section-label">Get in Touch</span>
+          <h2 class="section-title">Let's Work Together</h2>
+          <p>I'm currently open to new opportunities — whether it's a full-time role, freelance project, or just a chat about mobile development. Feel free to reach out!</p>
+          <div class="contact-links">
+            <a href="mailto:mhmtuanvn@gmail.com" class="clink" id="link-email">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              mhmtuanvn@gmail.com
+            </a>
+            <a href="tel:+84394040500" class="clink" id="link-phone">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.92 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              +84 39 40 40 500
+            </a>
+            <a href="https://github.com/minhtuann" target="_blank" rel="noopener" class="clink" id="link-github">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              github.com/minhtuann
+            </a>
+            <a href="CV-Tuan-Vu-Mobile-Developer.pdf" download class="clink clink-accent" id="link-cv">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download CV
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- ══ FOOTER ══ -->
   <footer class="footer">
     <div class="container">
       <div class="footer-inner">
-        <a href="#" class="nav-logo"><span class="logo-bracket">&lt;</span>TV<span class="logo-bracket">/&gt;</span></a>
-        <p class="footer-copy">© 2026 Tuan Vu. Built with ♥ and vanilla JS.</p>
+        <a href="#" class="nav-logo"><div class="logo-icon">T</div><span>MinhTuan<span class="logo-dot">.</span></span></a>
+        <p class="footer-copy">© 2026 Vu Hoang Minh Tuan. All rights reserved.</p>
         <div class="footer-links">
-          <a href="#projects">Projects</a>
           <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </div>
       </div>
